@@ -77,7 +77,7 @@ const Review = () => {
   return (
     <div className='review'>
         <img src={image} alt={name}/>
-        <h4 id={`author-${id}`} className="author">
+        <h4 id={`author-${index}`} className="author">
       
       </h4>
       <p className="job">{job}</p>
@@ -85,7 +85,7 @@ const Review = () => {
     <div className='btn-container'>
     <button onClick={handlenext} className='next-btn'>Next</button>
     <button onClick={handleprev} className='prev-btn'>Previous</button>
-    <button onClick={randomreview} className='random-btn'>Surprise me</button>
+    <button onClick={randomreview} className='random-btn'>surprise me</button>
     </div>
 
 
