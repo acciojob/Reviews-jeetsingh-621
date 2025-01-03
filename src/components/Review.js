@@ -49,7 +49,7 @@ const Review = () => {
             return reviews.length-1;
         }
         
-        if(num> reviews.length){
+        if(num>= reviews.length){
             return 0;
         };
         return num;
@@ -77,8 +77,8 @@ const Review = () => {
   return (
     <div className='review'>
         <img src={image} alt={name}/>
-        <h4 id={`author-${index}`} className="author">
-      
+        <h4 id={`author-${id}`} className="author">
+      {name}
       </h4>
       <p className="job">{job}</p>
       <p className="info">{text}</p>
